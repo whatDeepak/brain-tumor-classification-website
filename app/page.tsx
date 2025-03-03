@@ -5,7 +5,7 @@ import ScienceSection from '@/components/science-section'
 import PlatformSection from '@/components/platform-section'
 import NewsSection from '@/components/news-section'
 import TeamSection from '@/components/team-section'
-import PartnerSection from '@/components/partner-section'
+import CallToAction from '@/components/call-to-action'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <Hero />
       <ScienceSection />
-      <PlatformSection />
+      {/* <PlatformSection />
       <NewsSection />
-      <TeamSection />
-      <PartnerSection />
+      <TeamSection /> */}
+      <CallToAction />
       <Footer />
     </main>
   );

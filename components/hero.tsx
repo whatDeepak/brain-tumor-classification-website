@@ -1,13 +1,14 @@
 "use client";
 
+import CellImage from '/public/cell.png';
+import BrainImage from '/public/brain.png'
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="min-h-[90vh] bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-clip">
-      <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] llg:h-[800px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
+    <div className="min-h-[90vh] bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-hidden">
       <section className="container mx-auto px-6 relative flex flex-col items-center text-center">
         {/* Text Content */}
         <div className="max-w-4xl mx-auto relative z-10">
@@ -55,6 +56,7 @@ export default function Hero() {
         </motion.div>
 
       </section>
+      <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] llg:h-[800px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-90px)] sm:top-[calc(100%-110px)]"></div>
     </div>
   );
 }
