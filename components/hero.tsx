@@ -1,12 +1,12 @@
 "use client";
 
-import CellImage from '/public/cell.png';
-import BrainImage from '/public/brain.png'
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
+  const router = useRouter();
+
   return (
     <div className="min-h-[90vh] bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-hidden">
       <section className="container mx-auto px-6 relative flex flex-col items-center text-center">
@@ -47,7 +47,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <button className="bg-white text-black py-3 px-6 rounded-lg font-medium shadow-md hover:bg-gray-200 transition flex items-center justify-center gap-2 group">
+          <button 
+          onClick={() => router.push("/upload")}
+          className="bg-white text-black py-3 px-6 rounded-lg font-medium shadow-md hover:bg-gray-200 transition flex items-center justify-center gap-2 group">
             Try It Now
             <span className="transform -rotate-45 transition-transform duration-300 group-hover:rotate-0">
               <ArrowRight size={20} />
