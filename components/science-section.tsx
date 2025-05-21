@@ -35,7 +35,7 @@ export default function ScienceSection() {
       (entries) => {
         if (entries[0].isIntersecting && !hasAnimated) {
           animateNumbers(setPatientCount, 300000);
-          animateNumbers(setAccuracyRate, 96.5);
+          animateNumbers(setAccuracyRate, 98.75);
           setHasAnimated(true);
           observer.disconnect();
         }
@@ -55,7 +55,7 @@ export default function ScienceSection() {
   }, [hasAnimated]);
 
   return (
-    <section ref={sectionRef} className="min-h-[60vh] py-20 px-8 sm:px-16 md:px-32 relative bg-black">
+    <section  id="aboutus" ref={sectionRef} className="min-h-[60vh] py-20 px-8 sm:px-16 md:px-32 relative bg-black">
       <div className="container mx-auto px-8 py-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           {/* Left Side: Text Content */}
