@@ -41,7 +41,6 @@ export default function Header() {
             >
               <Link
                 href={`#${item.toLowerCase().replace(" ", "")}`}
-                scroll={false}
                 className="text-white hover:text-gray-300 transition-colors"
               >
                 {item}
